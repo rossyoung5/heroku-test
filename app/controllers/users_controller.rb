@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @team = Team.find(params[:team_id])
   end
 
   # GET /users/1
